@@ -1,0 +1,55 @@
+<div class="container col-7">
+  <div class="card">
+    <div class="card-header">
+      <h4>Editar Perfil</h4>
+    </div>
+    <div class="card-body">
+      <div class="row">
+        <div class="col-5">
+          <div class="card mb-3 mt-3">
+            <div class="card-body" *ngIf="usuario">
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="inputGroup-sizing-default">Nombre:</span>
+                </div>
+                <input type="text" class="form-control" aria-label="Default"
+                  aria-describedby="inputGroup-sizing-default" [(ngModel)]="usuario.nombre">
+              </div>
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="inputGroup-sizing-default">Apellido:</span>
+                </div>
+                <input type="text" class="form-control" aria-label="Default"
+                  aria-describedby="inputGroup-sizing-default" [(ngModel)]="usuario.apellido">
+              </div>
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="inputGroup-sizing-default">Teléfono:</span>
+                </div>
+                <input type="text" class="form-control" aria-label="Default"
+                  aria-describedby="inputGroup-sizing-default" [(ngModel)]="usuario.telefono">
+              </div>
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="inputGroup-sizing-default">Email:</span>
+                </div>
+                <input type="email" class="form-control" aria-label="Default"
+                  aria-describedby="inputGroup-sizing-default" [(ngModel)]="usuario.email">
+              </div>
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="inputGroup-sizing-default">Dirección:</span>
+                </div>
+                <input type="text" class="form-control" aria-label="Default"
+                  aria-describedby="inputGroup-sizing-default" [(ngModel)]="usuario.direccion">
+              </div>
+            </div>
+            <div class="card-footer">
+              <a class="btn btn-primary" (click)="editarUsuario()">Actualizar Datos</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

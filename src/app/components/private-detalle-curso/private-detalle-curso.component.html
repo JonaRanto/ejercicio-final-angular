@@ -1,0 +1,17 @@
+<div class="container col-7">
+  <div class="card">
+    <div class="row">
+      <div class="col-6">
+        <img class="card-img" [src]="curso.imagen">
+      </div>
+      <div class="col">
+        <p class="h3">Curso: {{curso.nombre}}</p>
+        <p class="h5">Profesor: {{curso.profesor}}</p>
+        Detalle: {{curso.detalle}}
+        <p *ngIf="!cursoComprado" class="h2">Precio: {{curso.precio | currency:'CLP':'symbol-narrow'}}</p>
+        <button *ngIf="!cursoComprado" class="btn btn-primary" (click)="generarFactura()">Adquirir curso</button>
+        <p *ngIf="cursoComprado" class="h3">Curso Adquirido!</p>
+      </div>
+    </div>
+  </div>
+</div>

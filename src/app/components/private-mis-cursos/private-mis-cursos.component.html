@@ -1,0 +1,26 @@
+<div class="container col-7">
+  <div class="card">
+    <div class="card-header">
+      <h4>Mis Cursos</h4>
+    </div>
+    <div class="card-body">
+      <div class="row">
+        <div class="col-4" *ngFor="let miCurso of misCursos">
+          <div class="card mb-3 mt-3">
+            <img [src]="miCurso.imagen" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">{{miCurso.nombre}}</h5>
+              <p class="card-text">Profesor: {{miCurso.profesor}}</p>
+            </div>
+            <div class="card-footer">
+              <a class="btn btn-primary" >Ingresar</a>
+            </div>
+          </div>
+        </div>
+        <div class="container" *ngIf=" !hayCursos ">
+          <h4>No hay Cursos</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

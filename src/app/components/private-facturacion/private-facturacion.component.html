@@ -1,0 +1,42 @@
+<div class="container col-7">
+  <div class="card">
+    <div class="card-header">
+      <h4>Facturación</h4>
+    </div>
+    <div class="card-body">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Emisión</th>
+            <th scope="col">Curso</th>
+            <th scope="col">Monto</th>
+            <th scope="col">Estado</th>
+            <th scope="col">-</th>
+            <th scope="col">-</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let factura of facturas" [ngSwitch]="factura.estado">
+            <th scope="row">{{factura.id}}</th>
+            <td>{{factura.fechaEmision | date}}</td>
+            <td>{{factura.curso}}</td>
+            <td>{{factura.monto|currency:'CLP':'symbol-narrow'}}</td>
+            <td>{{factura.estado}}</td>
+            <td>
+              <a *ngSwitchCase="'Por Pagar'" class="cancelar" (click)="cancelarFactura(factura.id)">Cancelar</a>
+              <a *ngSwitchCase="'Pagada'">-</a>
+            </td>
+            <td>
+              <a *ngSwitchCase="'Por Pagar'" class="cancelar" (click)="pagarFactura(factura)">Pagar</a>
+              <a *ngSwitchCase="'Pagada'">-</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="container" *ngIf=" !hayFacturas ">
+        <h4>No hay Facturas</h4>
+      </div>
+    </div>
+  </div>
+</div>

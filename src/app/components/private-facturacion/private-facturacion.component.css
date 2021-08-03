@@ -1,0 +1,8 @@
+.cancelar {
+    color: blue;
+}
+
+.cancelar:hover{
+    color: red;
+    cursor: pointer;
+}

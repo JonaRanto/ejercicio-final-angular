@@ -1,0 +1,24 @@
+<div class="container col-7">
+    <div class="card">
+        <div class="card-header">
+            <h4>Mi Perfil</h4>
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-5">
+                    <div class="card mb-3 mt-3">
+                      <div class="card-body">
+                        <h5 class="card-title">Nombre: {{usuario.nombre}} {{usuario.apellido}}</h5>
+                        <p class="card-text">Telefono: {{usuario.telefono}}</p>
+                        <p class="card-text">Email: {{usuario.email}}</p>
+                        <p class="card-text">Dirección: {{usuario.direccion}}</p>
+                      </div>
+                      <div class="card-footer">
+                        <a class="btn btn-primary" [routerLink]="['/private', 'editar-perfil', usuario.id]">Editar pefil</a>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+</div>
