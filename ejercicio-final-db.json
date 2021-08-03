@@ -1,0 +1,75 @@
+{
+  "curso": [
+    {
+      "id": 1,
+      "nombre": "Introducción a la Programación",
+      "profesor": "Alan Brito",
+      "detalle": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt dolorum dolore explicabo, exercitationem quod quo sapiente nostrum tenetur delectus dolor.",
+      "imagen": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.aRzhmTkIAg_xyUUXBoGHkwHaE7%26pid%3DApi&f=1",
+      "precio": 11111
+    },
+    {
+      "id": 2,
+      "nombre": "Lenguajes de Programación",
+      "profesor": "Alan Brito",
+      "detalle": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non qui beatae adipisci fugiat sequi! Error praesentium labore cum qui beatae. Eaque perferendis repellat rem consectetur ab a doloribus ullam totam!",
+      "imagen": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftecno.americaeconomia.com%2Fsites%2Ftecno.americaeconomia.com%2Ffiles%2Fstyles%2Fphoto_article%2Fpublic%2Ffield%2Fimage%2Fcomputer-keyboard-technology-coding.jpg%3Fitok%3DDX3W-IsW&f=1&nofb=1",
+      "precio": 22222
+    },
+    {
+      "id": 3,
+      "nombre": "Ingenierías de Software",
+      "profesor": "Alan Brito",
+      "detalle": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non qui beatae adipisci fugiat sequi! Error praesentium labore cum qui beatae. Eaque perferendis repellat rem consectetur ab a doloribus ullam totam!",
+      "imagen": "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.nebrija.com%2Fmedios%2Factualidadnebrija%2Fwp-content%2Fuploads%2Fsites%2F2%2F2017%2F04%2Fpexels-photo-787x459.jpg&f=1&nofb=1",
+      "precio": 33333
+    },
+    {
+      "id": 4,
+      "nombre": "Desarrollo de Aplicaciones Web",
+      "profesor": "Alan Brito",
+      "detalle": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non qui beatae adipisci fugiat sequi! Error praesentium labore cum qui beatae. Eaque perferendis repellat rem consectetur ab a doloribus ullam totam!",
+      "imagen": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Funioninformatica.org%2Fwp-content%2Fuploads%2F2020%2F01%2Fprgram.jpg&f=1&nofb=1",
+      "precio": 44444
+    },
+    {
+      "id": 5,
+      "nombre": "Arquitectura de Software",
+      "profesor": "Alan Brito",
+      "detalle": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non qui beatae adipisci fugiat sequi! Error praesentium labore cum qui beatae. Eaque perferendis repellat rem consectetur ab a doloribus ullam totam!",
+      "imagen": "https://blog.uniacc.cl/hubfs/%C2%BFSe%20puede%20estudiar%20Ingenieri%CC%81a%20en%20Informa%CC%81tica%20TLU_.png",
+      "precio": 55555
+    }
+  ],
+  "usuario": [
+    {
+      "id": 1,
+      "nombre": "Jonathan",
+      "apellido": "Navarro",
+      "telefono": "654364536",
+      "email": "jonathan@ranto.cl",
+      "direccion": "Calle Granada 1313"
+    }
+  ],
+  "factura": [
+    {
+      "idUsuario": 1,
+      "idCurso": 4,
+      "curso": "Desarrollo de Aplicaciones Web",
+      "monto": 44444,
+      "fechaEmision": 1627999624938,
+      "estado": "Pagada",
+      "id": 1
+    }
+  ],
+  "misCursos": [
+    {
+      "idUsuario": 1,
+      "idCurso": 4,
+      "nombre": "Desarrollo de Aplicaciones Web",
+      "profesor": "Alan Brito",
+      "imagen": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Funioninformatica.org%2Fwp-content%2Fuploads%2F2020%2F01%2Fprgram.jpg&f=1&nofb=1",
+      "id": 1
+    }
+  ]
+}
